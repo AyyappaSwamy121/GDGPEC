@@ -1,0 +1,667 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <body>
+
+		<section class="slider">
+			<div class="hero-slider">
+				{% load static %}
+<div class="single-slider" style="background-image: url('{% static "img/homepage.webp" %}');">
+
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="single-slider" style="background-image:url('{% static "img/gdgphone.jpg'" %}''); ">
+				
+				</div>
+				
+			</div>
+		</section>
+        <br> <br>
+		<section class="Feautes section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2 style="font-size:xx-larger">Communities</h2>
+							
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-12">
+						
+						<div class="single-features">
+							<div class="signle-icon ">
+								<img src="{% static 'img/about-red_960.png' %}"  alt="#">
+							</div>
+							<h3 >Google Developer Groups</h3>
+							<p>Google Developer Groups (GDGs) bring together developers and technologists to connect, learn, and grow alongside Google's technologies and experts.</p>
+						</div>
+						
+					</div>
+                    <div class="col-lg-4 col-12">
+					
+						<div class="single-features last">
+							<div class="signle-icon">
+								<img src="{% static 'img/all3.jpg' %}"  alt="#">
+							</div>
+							<h3>Google Developer Experts</h3>
+							<p>Become a recognized leader in your field. Join the Google Developer Experts program and share your passion for Google technologies</p>
+						</div>
+					
+					</div>
+					<div class="col-lg-4 col-12">
+					
+						<div class="single-features" style="padding:none !important">
+							<div class="signle-icon">
+								<img src="{% static 'img/about-green_960.png' %}"  alt="#">
+							</div>
+							<h3>Google Developer Groups on Campus</h3>
+							<p>GDGs on Campus provide learning opportunities for aspiring developers from universities and colleges around the world, allowing them to gain hands-on experience, develop essential skills, and build a strong foundation for a tech career</p>
+						</div>
+						
+					</div>
+				
+				</div>
+			</div>
+		</section>
+		<section class="why-choose section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>AI Revolution</h2>
+							
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-12">
+					
+						<div class="choose-left">
+							<h3 style="color: rgb(47, 47, 158);">Introducing Gemini 2.0</h3>
+							<p>Starting today, developers can test and explore Gemini 2.0 Flash via the Gemini API in Google AI Studio and Vertex AI.</p>
+						
+							<div class="row">
+								<div class="col-lg-6">
+									<ul class="list">
+										<li><i class="fa fa-caret-right"></i> Faster and More Efficient </li>
+										<li><i class="fa fa-caret-right"></i>Advanced Multimodal  </li>
+										<li><i class="fa fa-caret-right"></i> Better Reasoning  </li>
+									</ul>
+								</div>
+								<div class="col-lg-6">
+									<ul class="list">
+										<li><i class="fa fa-caret-right"></i> Optimized for Developers </li>
+										<li><i class="fa fa-caret-right"></i>Context Handling</li>
+										<li><i class="fa fa-caret-right"></i> Enhanced Memory  </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">
+						<div class="choose-right">
+							<div class="video-image">
+								<video src="{% static 'img/gemini 2.0.mp4' %}"   controls></video>
+								<!-- <a href="https://www.youtube.com/watch?v=RFVXy6CRVR4" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="call-action overlay" data-stellar-background-ratio="0.5">
+			<div style="
+    width: 100%;
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+">
+
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('{% static "img/quiz.webp" %}');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(4px);
+        z-index: -1;
+    "></div>
+
+
+    <div>
+        <div class="col-lg-12 col-md-12 col-12">
+            <div class="content">
+                <h2 style="color:black;">Want to Take a Quiz ?</h2>
+                <div class="button">
+					<a href="#" style="background-color: #4070f4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">Login</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+		</section>
+
+		<section id="p" class="portfolio section" >
+]			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Events</h2>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 col-12">
+						<div class="owl-carousel portfolio-slider">
+							<div class="single-pf">
+								<img src="{% static 'img/Presentation2.jpg' %}" alt="#">
+								<a href="https://gdg.community.dev/events/details/google-gdg-prayagraj-presents-build-with-ai-prayagraj/" target="_blank" class="btn">View Details</a>
+							</div><div class="single-pf">
+								<img src="{% static 'img/Presentation3.jpg' %}" alt="#">
+								<a href="https://gdg.community.dev/events/details/google-gdg-on-campus-pimpri-chinchwad-college-of-engineering-pune-india-presents-ieee-codeclash/" target="_blank" class="btn">View Details</a>
+							</div><div class="single-pf">
+								<img src="{% static 'img/Presentation4.jpg' %}" alt="#">
+								<a href="https://gdg.community.dev/events/details/google-gdg-on-campus-dy-patil-college-of-engineering-pune-india-presents-google-solution-challenge-ideathon/" target="_blank" class="btn">View Details</a>
+							</div><div class="single-pf">
+								<img src=" {% static 'img/event1.jpg' %}" alt="#">
+								<a href="https://gdg.community.dev/events/details/google-gdg-on-campus-medi-caps-university-indore-india-presents-tech-roadies-the-ultimate-tech-faceoff/" target="_blank" class="btn">View Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title " >
+							<h2 style="display: flex; align-items: center; padding-left: 150px;">
+								<img src="{% static 'img/GDG-Sticker-Brackets.gif' %}" width="100px" alt="#" style="margin-right: 10px;">
+								Developer Products
+								<img src="{% static 'img/GDG-Sticker-Brackets.gif' %}" width="100px"  alt="#" style="margin-left: 10px;">
+							  </h2>
+
+						
+							<p>Discover our range of developer tools crafted to spark innovation, simplify your workflow, and help you unlock new possibilities for your projects.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+						
+						<div class="single-service" style="text-align: center; display: flex; flex-direction: column; align-items: center;"">
+							
+							<div class="news-head">
+							<img src="{% static 'img/android-logo.svg' %}" height="100" width="100" alt="">
+							</div>
+							<h4><a href="service-details.html">Android</a></h4>
+							<p>Modern tools to help you build experiences that people love across every Android device.</p>	
+						</div>
+					
+					</div>
+                    
+					<div class="col-lg-4 col-md-6 col-12">
+					
+						<div class="single-service" style="text-align: center; display: flex; flex-direction: column; align-items: center;"">
+							
+							<img src="{% static 'img/firebase.svg' %}" height="100" width="100" alt="">
+							<h4><a href="service-details.html">FireBase</a></h4>
+							<p>An app development platform that helps you build and grow apps and games users love. </p>	
+						</div>
+						
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+					
+						<div class="single-service" style="text-align: center; display: flex; flex-direction: column; align-items: center;"">
+						
+							<img src="{% static 'img/kaggle.svg' %}" height="10" width="60" alt="" style="align-items: center;" >
+							<h4><a href="service-details.html">Kaggle</h4>
+							<p>A platform to share machine learning data sets, explore and build models, and compete in competitions. </p>	
+						</div>
+						
+					</div>
+                    <hr>
+					<div class="col-lg-4 col-md-6 col-12">
+							<div class="single-service" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+						
+							<img src="{% static 'img/flutter.png ' %}" height="100" width="100" alt="">
+							<h4><a href="service-details.html">Flutter</a></h4>
+							<p>Build, test, and deploy beautiful web, mobile, desktop and embedded apps from one codebase. </p>	
+						</div>
+					
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+					
+						<div class="single-service" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+							
+							<img src="{% static 'img/gemini-icon_720.png ' %}" height="100" width="100" alt="">
+							<h4><a href="service-details.html">Gemini API</a></h4>
+							<p>Build and deploy production ready generative AI experiences, enhanced by Gemini models. Get started for free! </p>	
+						</div>
+					
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-12">				
+						<div class="single-service" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+							<img src="{% static 'img/ai-studio-icon.png' %}" height="100" width="100" alt="">
+							<h4><a href="service-details.html">Google AI studio</a></h4>
+							<p>Build generative AI applications quickly with Gemini in Google AI Studio.</p>	
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<section class="pricing-table section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Trending News</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table" style="display: flex; flex-direction: column; height: 100%;">
+						
+							<div class="table-head" style="height: 50%; overflow: hidden;">
+								<img src="{% static 'img/join-a-community_2880.png' %}"  
+									style="width: 100%; height: 100%; object-fit:contain;" 
+									alt="">
+							</div>
+						
+							<ul class="table-list" style="flex-grow: 1;">
+								<h5 style="color: blue;">Android gaming: graphics and performance upgrades</h5> <br>
+								<li>Learn how new tools like Vulkan and ADPF help you enhance your Android game development.</li>
+							
+							</ul>
+							
+							<div class="table-bottom">
+								
+								<a href="#" style="background-color: #4070f4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">Learn More</a>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table" style="display: flex; flex-direction: column; height: 100%;">
+						
+							<div class="table-head" style="height: 50%; width: 100%; padding: 0; margin: 0; overflow: hidden;">
+								<img src="{% static 'img/gemini-code-assist_2880.jpeg' %}"  
+									style="width: 100%; height: 100%; object-fit: cover; display: block; border: none; margin: 0; padding: 0;" 
+									alt="">
+							</div>
+						
+							<ul class="table-list" style="flex-grow: 1; margin: 0; padding: 15px;">
+								<h5 style="color: blue; margin-top: 10px;">Get coding help from Gemini Code Assist — now for free</h5>
+								<li>Developers worldwide now get free AI-assisted coding help with the highest usage limits available, as well as code review assistance.</li>
+							</ul>
+					<br> <br> <br> <br> <br>
+							<div class="table-bottom" style="text-align: center; padding: 10px;">
+								
+								<a href="#" style="background-color: #4070f4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">Learn More</a>
+							</div>
+						</div>
+					</div>
+																																			
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table" style="display: flex; flex-direction: column; height: 100%;">
+							
+							<div class="table-head" style="height: 50%; overflow: hidden;">
+								<img src="{% static 'img/google-play-games_2880.png' %}"  
+									style="width: 100%; height: 100%; object-fit: cover;" 
+									alt="">
+							</div>
+					
+							<ul class="table-list" style="flex-grow: 1;">
+								<h5 style="color: blue;">Google Play Games on PC: new features</h5> <br>
+								<li>Discover how Google Play Games is helping developers expand their reach across devices.</li>
+							
+							</ul>
+							
+							<div class="table-bottom">
+								<a href="#" style="background-color: #4070f4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">Learn More</a>
+							
+							</div>
+						</div>
+					</div>
+					
+				
+				</div>	
+			</div>	
+		</section>	
+
+		<section class="blog section" id="blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Keep up with Our Most Recent  News.</h2>
+							</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+					
+						<div class="single-news">
+							<div class="news-head">
+								<img src="{% static 'img/yt.svg' %}" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									
+									<h2 style="text-align: center;"><a>Youtube</a></h2>
+									<p class="text">Subscribe to join a community of creative developers and learn the latest in Google technology.</p>
+								 <br>	<p style="text-align: center;"><a href="https://www.youtube.com/user/GoogleDevelopers" class="btn date">Follow </a></p>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+					
+						<div class="single-news text-center">
+							<div class="news-head ">
+								<img src="{% static 'img/Instagram-Logo.wine.svg' %}" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content text-center ">
+									<h2><a>Instagram</a></h2>
+									<p class="text">Follow and discover developer resources, community events, networking opportunities to grow your skills.</p>
+								 <br>	<a href="https://www.instagram.com/googlefordevs/" class="btn date">Follow </a>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+					
+						<div class="single-news">
+							<div class="news-head ">
+								<img src="{% static 'img/icons8-linkedin.svg' %}"  width="10px" height="100px" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content text-center">
+									<h2><a>Linkedin</a></h2>
+									<p class="text">Join a community of creative developers and learn how to use the latest in technology.</p>
+								 <br>	<a href="https://www.linkedin.com/showcase/googledevelopers/" class="btn date">Follow </a>
+								</div>
+							</div>
+						</div>
+				
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<H1 style="text-align: center ; color:#1A76D1; ">Services and Intigrations</H1> <br><br>
+		<div class="clients overlay" style="background-color: white !important; padding: 20px; width: 100%;">
+			<div class="container" style="background-color: white;">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-12">
+						<div class="owl-carousel clients-slider" style="display: flex; gap: 20px;">
+							<div class="single-clients" style="text-align: center; padding: 20px; background-color: white;">
+								<img src="{% static 'img/flutter.png' %}" style="width: 150px; height: 150px; object-fit: contain; display: block; margin: 0 auto 10px;" alt="">
+								<h1 style="font-size: 18px; margin: 0;">Flutter</h1>
+							</div>
+							<div class="single-clients" style="text-align: center; padding: 20px; background-color: white;">
+								<img src="{% static 'img/gemini-icon_720.png' %}" style="width: 150px; height: 150px; object-fit: contain; display: block; margin: 0 auto 10px;" alt="">
+								<h1 style="font-size: 18px; margin: 0;">GEMINI</h1>
+							</div>
+							<div class="single-clients" style="text-align: center; padding: 20px; background-color: white;">
+								<img src="{% static 'img/privacy-sandbox-logo.svg' %}" style="width: 150px; height: 150px; object-fit: contain; display: block; margin: 0 auto 10px;" alt="">
+								<h1 style="font-size: 18px; margin: 0;">Privacy Sandbox</h1>
+							</div>
+							<div class="single-clients" style="text-align: center; padding: 20px; background-color: white;">
+								<img src="{% static 'img/Checks_Icon_1920.png' %}" style="width: 150px; height: 150px; object-fit: contain; display: block; margin: 0 auto 10px;" alt="">
+								<h1 style="font-size: 18px; margin: 0;">Checks</h1>
+							</div>
+							<div class="single-clients" style="text-align: center; padding: 20px; background-color: white;">
+								<img src="{% static 'img/logo-google-g.svg' %}" style="width: 150px; height: 150px; object-fit: contain; display: block; margin: 0 auto 10px;" alt="">
+								<h1 style="font-size: 18px; margin: 0;">Google Workspace</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+		
+		<script>
+			$(document).ready(function(){
+				$(".clients-slider").owlCarousel({
+					loop: true,
+					margin: 20,
+					autoplay: true,
+					autoplayTimeout: 2000, // 2 seconds
+					autoplayHoverPause: true,
+					items: 3,
+					responsive:{
+						0:{ items:1 },
+						600:{ items:2 },
+						1000:{ items:3 }
+					}
+				});
+			});
+		</script>
+		
+		
+	
+<style>
+    .accordion-button {
+        background-color: white !important; /* Default background */
+        color: black !important; /* Default text color */
+        /* border: 1px solid black !important; */
+    }
+
+    .accordion-button:focus, 
+    .accordion-button:not(.collapsed) {
+        background-color: #57caff !important; /* Your preferred color */
+        color: white !important; /* Text color */
+        box-shadow: none !important;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        filter: brightness(0) invert(1); /* Changes arrow icon color */
+    }
+</style>
+
+<div class="container-xxl py-5 category" style="background-color: white;">
+    <div class="container ">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="mb-5" style="font-weight: bold; color: #333;">Frequently Asked Questions</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="accordion" id="accordionExample">
+                    
+                    <div class="accordion-item border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                Can I use reCAPTCHA with third party solutions?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Yes, you can use both reCAPTCHA (non-Enterprise version) and reCAPTCHA Enterprise. Typically the third party solution asks for your public key and either your secret key or your API key. Make sure to only provide your secret key and API key to trusted third parties. </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                Do passkeys work on devices that don't have a screen lock method set up?
+  </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                It depends on the password manager implementation, whether a credential provider allows for a passkey creation and authentication without a user knowledge factor challenge. Providers can prompt users to set up a PIN or biometric screen lock before creating a passkey.  </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                Why is Google working on a DNS service?  </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                We believe that a faster and safer DNS infrastructure could significantly improve the web browsing experience. Google Public DNS has made many improvements in the areas of speed, security, and validity of results. We've shared these improvements in our documentation, to contribute to an ongoing conversation within the web community.   </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                What is WebP? Why should I use it?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                WebP is a method of lossy and lossless compression that can be used on a large variety of photographic, translucent and graphical images found on the web. The degree of lossy compression is adjustable so a user can choose the trade-off between file size and image quality. WebP typically achieves an average of 30% more compression than JPEG and JPEG 2000, without loss of image quality (see Comparative Study).
+
+                                The WebP format essentially aims at creating smaller, better looking images that can help make the web faster.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                If my email is not in a bundle do my metrics decline because no one sees my email?
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                No. Unbundled emails aren't going to have degraded metrics compared to before the bundling feature was introduced. Users generally scroll down to a specific date or last read email.
+                                <ul class="mt-3">
+                                    <li>Data Science Courses</li>
+                                    <li>Artificial Intelligence Courses</li>
+                                    <li>Software Development Courses</li>
+                                    <li>Cloud Computing Courses</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+		<footer id="footer" class="footer ">
+		
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>About Us</h2>
+								<p>Google Developers is a community offering resources, tools, and support for building software, apps, and innovative technologies worldwide.</p>
+								
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Quick Links</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+									
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											
+											<li ><a href="{% url 'perks' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>Perks </a> </li>
+                                      
+											<li>
+												<a href="{% url 'home' %}#p"><i class="fa fa-caret-right" aria-hidden="true"></i>Events</a>
+											</li>
+											<li><a href="{% url 'gallery2' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>Gallery</a></li>
+												
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Newsletter</h2>
+								<p>subscribe to our newsletter to get allour news in your inbox</p>
+								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+									<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Your email address'" required="" type="email">
+									<button class="button"><i class="icofont icofont-paper-plane"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2025  |  All Rights Reserved by <a href="#" target="_blan">CSE student</a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+		</footer>
+
+		
+        {% endblock %}

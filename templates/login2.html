@@ -1,0 +1,95 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GDG by Pragati</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="icon" href="{% static 'img/favicon.png' %}">
+
+  <style>
+    body {
+      background: url("{% static 'img/login_background.jpg' %}") no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      padding-left: 300px;
+    }
+
+    .container {
+      max-width: 500px;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-custom {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+      font-weight: 500;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      background: #71b7e6;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-custom:hover {
+      background: white;
+      border: 2px solid #71b7e6;
+      color: black;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title text-center">Log In</div>
+
+    {% if messages %}
+    <script>
+      {% for message in messages %}
+        Swal.fire({
+          icon: "{% if message.tags == 'success' %}success{% else %}error{% endif %}",
+          title: "{% if message.tags == 'success' %}Success!{% else %}Oops...{% endif %}",
+          text: "{{ message }}",
+        });
+      {% endfor %}
+    </script>
+    {% endif %}
+
+    <form action="{% url 'user_login' %}" method="post">
+      {% csrf_token %}
+
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+
+    
+
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" placeholder="Enter your password" required>
+      </div>
+
+    
+
+      <button type="submit" class="btn btn-custom">Log In</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

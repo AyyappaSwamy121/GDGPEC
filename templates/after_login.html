@@ -1,0 +1,226 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<style>
+    .single-service {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #ffffff;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 15px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .single-service:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .single-service img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .service-buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .service-buttons a {
+        padding: 8px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .btn-learn {
+        background: #007bff;
+        color: white;
+    }
+
+    .btn-quiz {
+        background: #28a745;
+        color: white !important;
+    }
+
+    .btn-learn:hover {
+        background: #0056b3;
+    }
+
+    .btn-quiz:hover {
+        background: #218838;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .service-buttons {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .service-buttons a {
+            width: 100%;
+        }
+    }
+</style>
+
+<section class="services section">
+    <div class="container">
+        <div class="row">
+            <div class="text-end">
+                <!-- <a href="{% url 'view_score' %}" class=" btn-primary" style="width: 20%;">View Score</a> -->
+                
+                    <a href="{% url 'view_score' %}" class=" btn-primary" style="width: 20%; padding: 20px; color: white;">View Scores</a>
+                
+                
+            </div>
+            
+            
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>
+                        <img src="{% static 'img/GDG-Sticker-Brackets.gif' %}" width="80px" alt="#" style="margin-right: 10px;">
+                        Quizes
+                        <img src="{% static 'img/GDG-Sticker-Brackets.gif' %}" width="80px" alt="#" style="margin-left: 10px;">
+                    </h2>
+                    <p style="font-weight:bold;">There are various courses to take the quiz and improve your knowledge.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Android -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-service">
+                    <img src="{% static 'img/android-logo.svg' %}" height="80" width="80" alt="">
+                    <h4><a href="https://developer.android.com/">Android</a></h4>
+                    <p >Modern tools to help you build experiences that people love across every Android device.</p>    
+                    <div class="service-buttons">
+                        
+                        <a href="#" class="btn-quiz" onclick="showQuizInstructions('{% url 'quiz' 'android_development' %}')">Take Quiz</a>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Firebase -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-service">
+                    <img src="{% static 'img/firebase.svg' %}" height="80" width="80" alt="">
+                    <h4><a href="https://firebase.google.com/">Firebase</a></h4>
+                    <p>An app development platform that helps you build and grow apps and games users love.</p>    
+                    <div class="service-buttons">
+                        
+                        <a href="#" class="btn-quiz" onclick="showQuizInstructions('{% url 'quiz' 'firebase' %}')">Take Quiz</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaggle -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-service">
+                    <img src="{% static 'img/kaggle.svg' %}" height="30" width="40" alt="">
+                    <h4><a href="https://www.kaggle.com/">Kaggle</a></h4>
+                    <p>A platform to share machine learning data sets, explore and build models, and compete in competitions.</p>    
+                    <div class="service-buttons">
+                        
+                       
+                        <a href="#" class="btn-quiz" onclick="showQuizInstructions('{% url 'quiz' 'kaggle' %}')">Take Quiz</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flutter -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-service">
+                    <img src="{% static 'img/flutter.png' %}" height="80" width="80" alt="">
+                    <h4><a href="https://flutter.dev/">Flutter</a></h4>
+                    <p>Build, test, and deploy beautiful web, mobile, desktop, and embedded apps from one codebase.</p>    
+                    <div class="service-buttons">
+                       
+                       
+                        <a href="#" class="btn-quiz" onclick="showQuizInstructions('{% url 'quiz' 'flutter' %}')">Take Quiz</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gemini API -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-service">
+                    <img src="{% static 'img/gemini-icon_720.png' %}" height="80" width="80" alt="">
+                    <h4><a href="https://aistudio.google.com/">Gemini API</a></h4>
+                    <p>Build and deploy production-ready generative AI experiences, enhanced by Gemini models.</p>    
+                    <div class="service-buttons">
+                        
+                        <a href="#" class="btn-quiz" onclick="showQuizInstructions('{% url 'quiz' 'gemini' %}')">Take Quiz</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google AI Studio -->
+            <div class="col-lg-4 col-md-6 col-12">                
+                <div class="single-service">
+                    <img src="{% static 'img/Kotlin.avif' %}" height="80" width="110" alt="">
+                    <h4><a href="https://developer.android.com/kotlin">Kotlin</a></h4>
+                    <p>Kotlin is a modern programming language designed for Android, JVM, and web development.<p>    
+                    <div class="service-buttons">
+                        <!-- <a href="#" class="btn-learn">Learn</a> -->
+                        
+                        <a href="#" class="btn-quiz" onclick="showQuizInstructions('{% url 'quiz' 'kotlin' %}')">Take Quiz</a>
+                  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+    function showQuizInstructions(quizUrl) {
+        Swal.fire({
+            title: "<h3 class='fw-bold text-primary'>Quiz Instructions</h3>",
+            html: `
+                <div class="text-start">
+                    <ul class="list-group">
+                        <li class="list-group-item"><b>1.</b> Read all questions carefully before answering.</li>
+                        <li class="list-group-item"><b>2.</b> Each question has a time limit of <b>30 seconds</b>.</li>
+                        <li class="list-group-item"><b>3.</b> There is <span class="text-success fw-bold">no negative marking</span>.</li>
+                        <li class="list-group-item"><b>4.</b> Ensure a <span class="text-warning fw-bold">stable internet connection</span>.</li>
+                        <li class="list-group-item"><b>5.</b> Click "<b>Start Quiz</b>" to begin.</li>
+                    </ul>
+                </div>
+            `,
+            icon: "info",
+            showCancelButton: true,
+            confirmButtonText: "<i class='bi bi-check-circle'></i> Start Quiz",
+            cancelButtonText: "<i class='bi bi-x-circle'></i> Cancel",
+            confirmButtonColor: "#28a745",
+            cancelButtonColor: "#d33",
+            customClass: {
+                popup: 'border border-primary shadow-lg p-3 rounded',
+                confirmButton: ' btn-success px-4 py-2',
+                cancelButton: ' btn-danger px-4 py-2'
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = quizUrl;
+            }
+        });
+    }
+</script>
+
+
+
+{% endblock %}

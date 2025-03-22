@@ -1,0 +1,59 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<header class="header"  style="margin-bottom: 20px;">
+			
+			
+
+    <div class="header-inner">
+        <div class="container-fluid">
+            
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-12">
+                      
+                        <div class="logo">
+                        
+                            
+                            
+                            
+                            <a href="index.html"><img style='padding-top:10px;' src="{% static 'img/gdglogo' %}.jpg" width="250" height="" alt="#"></a>
+                        </div>
+                    
+                        <div class="mobile-nav"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="main-menu b">
+                            <nav class="navigation">
+                                <ul class="nav menu">
+                                    <li class="active"><a href="index.html">Home </a>	</li>
+                                    <li style="font-size: xx-large;"><a href="#p">Events </a></li>
+                                    <li style="font-size: xx-large;"><a href="gallery2.html">Gallery </a></li>
+                                    <li style="font-size: xx-large;"><a href="faq.html">Blogs </a> </li>
+                                    <li style="font-size: xx-large;"><a href="#">Perks </a> </li>
+                                    <li style="font-size: xx-large;"><a href="contact.html">Contact Us</a></li>
+                                    <li style="font-size: xx-large;"><a href="{% url 'registration'%}">Sign up</a></li>
+                                    <li style="font-size: xx-large;"><a href="{% url 'login2'%}">Login</a></li>
+                                </ul>
+                            </nav>
+                            
+                        </div>
+                                            </div>
+                    <div class="col-lg-4 row col-12">
+                        <div class="col-lg-6"></div>
+                        <div class="get-quote">
+                            <a href="appointment.html" class="btn">Sign up </a>
+                            
+                        </div>
+                        <div style="width: 10px;"></div>
+                        <div class="get-quote">
+                            <a href="login.html" class="btn">Login</a></div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+</header>
+
+{% endblock %}

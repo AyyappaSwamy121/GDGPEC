@@ -1,0 +1,238 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .main {
+        width: 100%;
+        padding: 20px 0;
+        background-color: #f8f9fa;
+      }
+
+      .swiper {
+        width: 90%;
+        max-width: 1200px;
+        height: 400px;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      /* Swiper Navigation */
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 15px;
+        border-radius: 50%;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #c87e4f;
+      }
+
+      @media (max-width: 768px) {
+        .swiper {
+          height: 250px;
+        }
+      }
+    </style>
+       <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+	
+		
+		       <link rel="icon" href="{% static 'img/favicon.png' %}">
+		
+	
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="css/nice-select.css">
+		
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+	
+        <link rel="stylesheet" href="css/icofont.css">
+
+		<link rel="stylesheet" href="css/slicknav.min.css">
+		
+        <link rel="stylesheet" href="css/owl-carousel.css">
+	
+		<link rel="stylesheet" href="css/datepicker.css">
+
+        <link rel="stylesheet" href="css/animate.min.css">
+
+        <link rel="stylesheet" href="css/magnific-popup.css">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+ 
+    <div class="col-lg-12">
+      <div class="section-title">
+          <h2>
+              <img src="{% static 'img/GDG-Sticker-Assembly.gif' %}" width="120px" alt="#" style="margin-right: 10px; text-decoration: underline;" >
+              Gallery
+              <img src="{% static 'img/GDG-Sticker-Assembly.gif' %}" width="120px" alt="#" style="margin-left: 10px;">
+          </h2>
+          <p style="font-weight:bold;">GDG offer numerous perks, including networking opportunities with industry experts, hands-on workshops, mentorship, collaboration on innovative projects, hackathons, and speaking opportunities.</p>
+      </div>
+  </div>
+</div>
+    <section class="main">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="{% static 'img/gallery1.jpeg' %}" alt="Gallery Image 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="{% static 'img/gallery2.jpeg' %}" alt="Gallery Image 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="{% static 'img/gallery3.jpeg' %}" alt="Gallery Image 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="{% static 'img/gallery4.jpeg' %}" alt="Gallery Image 4" />
+          </div>
+          <div class="swiper-slide">
+            <img src="{% static 'img/gallery5.jpeg' %}" alt="Gallery Image 5" />
+          </div>
+        </div>
+    
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <footer id="footer" class="footer ">
+	
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>About Us</h2>
+								<p>Google Developers is a community offering resources, tools, and support for building software, apps, and innovative technologies worldwide.</p>
+							
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+							
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Quick Links</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+                   
+										<ul>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											
+											<li ><a href="{% url 'perks' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>Perks </a> </li>
+                                      
+											<li>
+												<a href="{% url 'home' %}#p"><i class="fa fa-caret-right" aria-hidden="true"></i>Events</a>
+											</li>
+											<li><a href="{% url 'gallery2' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>Gallery</a></li>
+												
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Newsletter</h2>
+								<p>subscribe to our newsletter to get allour news in your inbox</p>
+								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+									<input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Your email address'" required="" type="email">
+									<button class="button"><i class="icofont icofont-paper-plane"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper with Carousel Effect -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3, // Show 3 images at a time
+        spaceBetween: 20, // Space between images
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1024: { slidesPerView: 3 }, // 3 images on desktops
+          768: { slidesPerView: 2 }, // 2 images on tablets
+          480: { slidesPerView: 1 }, // 1 image on mobile
+        },
+      });
+    </script>
+  </body>
+</html>
+{% endblock %}

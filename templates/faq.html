@@ -1,0 +1,106 @@
+<!-- FAQ Section Start -->
+<style>
+    .accordion-button {
+        background-color: white !important; /* Default background */
+        color: black !important; /* Default text color */
+        /* border: 1px solid black !important; */
+    }
+
+    .accordion-button:focus, 
+    .accordion-button:not(.collapsed) {
+        background-color: #57caff !important; /* Your preferred color */
+        color: white !important; /* Text color */
+        box-shadow: none !important;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        filter: brightness(0) invert(1); /* Changes arrow icon color */
+    }
+</style>
+
+<div class="container-xxl py-5 category" style="background-color: white;">
+    <div class="container ">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="mb-5" style="font-weight: bold; color: #333;">Frequently Asked Questions</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="accordion" id="accordionExample">
+                    
+                    <div class="accordion-item border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                Can I use reCAPTCHA with third party solutions?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Yes, you can use both reCAPTCHA (non-Enterprise version) and reCAPTCHA Enterprise. Typically the third party solution asks for your public key and either your secret key or your API key. Make sure to only provide your secret key and API key to trusted third parties. </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                Do passkeys work on devices that don't have a screen lock method set up?
+  </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                It depends on the password manager implementation, whether a credential provider allows for a passkey creation and authentication without a user knowledge factor challenge. Providers can prompt users to set up a PIN or biometric screen lock before creating a passkey.  </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                Why is Google working on a DNS service?  </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                We believe that a faster and safer DNS infrastructure could significantly improve the web browsing experience. Google Public DNS has made many improvements in the areas of speed, security, and validity of results. We've shared these improvements in our documentation, to contribute to an ongoing conversation within the web community.   </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                What is WebP? Why should I use it?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                WebP is a method of lossy and lossless compression that can be used on a large variety of photographic, translucent and graphical images found on the web. The degree of lossy compression is adjustable so a user can choose the trade-off between file size and image quality. WebP typically achieves an average of 30% more compression than JPEG and JPEG 2000, without loss of image quality (see Comparative Study).
+
+                                The WebP format essentially aims at creating smaller, better looking images that can help make the web faster.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                If my email is not in a bundle do my metrics decline because no one sees my email?
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                No. Unbundled emails aren't going to have degraded metrics compared to before the bundling feature was introduced. Users generally scroll down to a specific date or last read email.
+                                <ul class="mt-3">
+                                    <li>Data Science Courses</li>
+                                    <li>Artificial Intelligence Courses</li>
+                                    <li>Software Development Courses</li>
+                                    <li>Cloud Computing Courses</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap & jQuery for Smooth Effects -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
